@@ -19,7 +19,7 @@ public class GenerateRaffleRequestHandler implements RequestHandler<APIGatewayPr
     @Override
     public APIGatewayProxyResponseEvent handleRequest(APIGatewayProxyRequestEvent request, Context context) {
         APIGatewayProxyResponseEvent response = new APIGatewayProxyResponseEvent();
-        response.setHeaders(Collections.singletonMap("Access-Control-Allow-Origin", "https://ren4nh.github.io/raffle/"));
+        response.setHeaders(Collections.singletonMap("Access-Control-Allow-Origin", "https://ren4nh.github.io"));
 
         try {
             GenerateRaffleRequest requestDTO = JSON.fromJson(request.getBody(), GenerateRaffleRequest.class);
