@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="raffle" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2757187a-8a62-4bcb-8cf8-6d5709fc2f9e">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="title" class="java.lang.String"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="number" class="java.lang.Integer"/>
+	<field name="price" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="131" splitType="Stretch">
+			<rectangle>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="120" y="9" width="427" height="105" isPrintWhenDetailOverflows="true" uuid="33d085b1-daa4-41f9-8055-c6f73d1cd69c"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="120" y="10" width="427" height="20" uuid="ac451ba1-7ed1-4a6d-95f6-f038f33273b1"/>
+				<textElement textAlignment="Center" markup="styled">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="121" y="36" width="424" height="56" isPrintWhenDetailOverflows="true" uuid="0f2389c7-672f-4c43-991a-50cb2250117c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="470" y="92" width="74" height="22" uuid="f03f24fc-f575-4fdc-b2ad-595ebfa26a7e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{number}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="9" width="120" height="105" isPrintWhenDetailOverflows="true" uuid="63cfad17-4fbf-4e02-8478-ffb65f696c41"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="19" width="30" height="10" uuid="e1640e00-88a8-4e70-9d23-1fb2f5ea2f70"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Nome :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="30" y="97" width="60" height="10" uuid="b5f388e8-5b9f-4615-964f-ca7023859822"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{number}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="30" width="110" height="20" uuid="ab96af3f-3a73-4e24-bda8-904f6f8b4c46">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement rotation="None">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[_________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="60" width="40" height="10" uuid="5985ec18-bd5b-4e39-a0c0-74281677dcfd"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None">
+					<font size="8"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Telefone :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="50" y="60" width="70" height="10" uuid="1c58a47c-399a-4499-b721-d6b956f2ac1f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement rotation="None">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[_________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="70" width="110" height="20" uuid="723a9273-1ac3-4afe-940e-33fc4c994efe">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement rotation="None">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[_________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="40" y="19" width="80" height="11" uuid="c989fd0d-ba6f-4aab-b7b4-ca02dc318630">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement rotation="None">
+					<font size="9.11"/>
+				</textElement>
+				<text><![CDATA[_____________________]]></text>
+			</staticText>
+			<textField pattern="¤#,##0.00;¤-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="315" y="92" width="36" height="20" uuid="55fb7a68-f971-4952-8c5f-84f5bb5e24b8"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="260" y="92" width="52" height="20" uuid="b22e8f22-c899-405b-8c90-6c1db9513ec0"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Valor]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
