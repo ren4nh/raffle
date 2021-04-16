@@ -95,7 +95,7 @@
 				</textElement>
 				<text><![CDATA[_____________________]]></text>
 			</staticText>
-			<textField pattern="¤#,##0.00;¤-#,##0.00" isBlankWhenNull="true">
+			<textField pattern="R$#,##0.00;R$-#,##0.00" isBlankWhenNull="true">
 				<reportElement x="315" y="92" width="36" height="20" uuid="55fb7a68-f971-4952-8c5f-84f5bb5e24b8"/>
 				<textElement textAlignment="Left"/>
 				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
