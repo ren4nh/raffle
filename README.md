@@ -8,5 +8,6 @@ Projeto criado para gerar rifas em papel.
 - AWS Lambda
 - AWS API Gateway
 - Jasper Reports
+- Github Actions
 
 Aplicação disponivel em https://ren4nh.github.io/raffle/
